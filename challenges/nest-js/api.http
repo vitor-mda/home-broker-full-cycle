@@ -1,0 +1,10 @@
+GET http://localhost:3000/assets
+
+###
+POST http://localhost:3000/assets
+Content-Type: application/json
+
+{
+  "id": "fe5f3844-12eb-11ee-be56-0242ac120002",
+  "symbol": "BTC/USD"
+}
