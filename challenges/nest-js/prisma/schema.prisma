@@ -12,5 +12,12 @@ datasource db {
 
 model Asset {
   id     String @id @map("_id")
-  symbol String
+  symbol String @db.String
+}
+
+model Order {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  asset_id String @db.String
+  price    Float  @db.Double
+  status   String @db.String
 }

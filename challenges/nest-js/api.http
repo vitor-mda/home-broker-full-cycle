@@ -8,3 +8,15 @@ Content-Type: application/json
   "id": "fe5f3844-12eb-11ee-be56-0242ac120002",
   "symbol": "BTC/USD"
 }
+
+###
+GET http://localhost:3000/api/orders
+
+###
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+  "asset_id": "fe5f3844-12eb-11ee-be56-0242ac120002",
+  "price": 2155.75
+}
